@@ -1,7 +1,7 @@
 import request from "supertest";
-import app from "../main"; // Importa tu aplicación Express
+import app from "../api";
 
-import { checkInputIsValid } from "../BusinessLogic/DataLogic";
+import { checkInputIsValid } from "../api/BusinessLogic/DataLogic";
 
 describe("Endpoints", () => {
   it("GET /datos debería devolver status 200", async () => {

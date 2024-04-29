@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import testRoutes from './Api/TestHandler'; 
-import usuariosRoutes from './Api/UserHandler';
-import productosRoutes from './Api/SubjectHandler';
+import testRoutes from './Handler/TestHandler'; 
+import usuariosRoutes from './Handler/UserHandler';
+import productosRoutes from './Handler/SubjectHandler';
 
 const router = Router();
 
-const V1Route = '/v1/api';
+const V1Route = '/api/v1';
 
 // Agregar todas las rutas aquí
 router.use(V1Route, testRoutes);
