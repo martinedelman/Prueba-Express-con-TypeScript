@@ -8,11 +8,13 @@
     "start": "tsc -p api && node dist/index.js",
     "build": "tsc -p api"
   },
+  "directories": {
+    "serve": "dist"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Martín Edelman",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
     "express": "^4.19.2"
   },
   "devDependencies": {

@@ -1,14 +1,11 @@
 import express from "express";
 import routes from "./Routes";
-var bodyParser = require("body-parser");
 
 const app = express();
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
-
 
 app.use(express.static('public'));
 
-app.use(urlencodedParser);
+app.use(express.json());
 
 app.use("/", routes);
 

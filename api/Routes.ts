@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import testRoutes from './Handler/TestHandler'; 
-import usuariosRoutes from './Handler/UserHandler';
-import productosRoutes from './Handler/SubjectHandler';
+import testRoutes from './Controller/TestController'; 
+import usuariosRoutes from './Controller/UserController';
+import productosRoutes from './Controller/SubjectController';
 
 const router = Router();
 
